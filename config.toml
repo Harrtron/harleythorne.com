@@ -1,0 +1,59 @@
+baseurl = "http://harleythorne.com/"
+title = "Harley Thorne - Platform Engineer"
+theme = "pulp"
+canonifyurls = true
+hasCJKLanguage = true
+# pygmentsCodefences = true
+# pygmentsUseClasses = true
+# googleAnalytics = "{your tracking code}"
+
+[taxonomies]
+  series = "series"
+
+[params]
+    author = "Harley Thorne"
+    avatar = "avatar.jpg"
+    favicon = "favicon.ico"
+    description = """
+        Harley is a Platform Engineer with 7+ years experience in IT, across Support, Infrastructure, SysAdmin and most recently Cloud functions.
+        He has experience working with tooling such as Terraform, Packer, Jenkins, Powershell, and has a real passion for automation.
+        Although most experienced using Windows and AWS Cloud, he loves to learn new technologies, and regularly attends technology events to keep up-to-date with the latest trends.
+    """
+    publicationYear = "2019"
+    listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
+    singlePageDateFormat = "January 2, 2006"
+    # custom_css = ["/css/custom.css"]
+    # custom_js = ["/js/custom.js"]
+
+[outputs]
+    section = ["JSON", "HTML"]
+
+[[menu.main]]
+    name = "Blog"
+    pre = "<i class='fa fa-book-open fa-lg'></i>" #Choose your favorite font from Font Awesome
+    url = "/blog/"
+    weight = 10
+
+[[menu.main]]
+    name = "LinkedIn"
+    pre = "<i class='fab fa-linkedin fa-lg'></i>"
+    url = "https://www.linkedin.com/in/harleythorne/"
+    weight = 20
+
+[[menu.main]]
+    name = "Twitter"
+    pre = "<i class='fab fa-twitter fa-lg'></i>"
+    url = "https://twitter.com/harleyjthorne"
+    weight = 20
+
+[[menu.main]]
+    name = "GitHub"
+    pre = "<i class='fab fa-github fa-lg'></i>"
+    url = "https://github.com/harrtron"
+    weight = 30
+
+[[menu.main]]
+    name = "Email"
+    pre = "<i class='fa fa-envelope fa-lg'></i>"
+    url = "mailto:harleyjthorne@gmail.com"
+    weight = 40
