@@ -1,10 +1,10 @@
 dist: xenial
 language: go
 before_install:
-  - chmod +x buildscripts/install_hugo.sh buildscripts/upload_s3.sh
+  - chmod +x buildscripts/install_hugo.sh buildscripts/install_awscli.sh buildscripts/upload_s3.sh
   - rm -r public
   - bash buildscripts/install_hugo.sh
-  - pip3 install awscli
+  - bash buildscripts/install_awscli.sh
 jobs:
   include:
     - stage: "Build and Deploy" 
