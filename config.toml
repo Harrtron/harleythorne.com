@@ -13,7 +13,7 @@ hasCJKLanguage = true
 [params]
     author = "Harley Thorne"
     avatar = "avatar.jpg"
-    favicon = "favicon.ico"
+    favicon = "favicon.png"
     description = """
         Harley is a Platform Engineer with 7+ years experience in IT, across Support, Infrastructure, SysAdmin and most recently Cloud functions.
         He has experience working with tooling such as Terraform, Packer, Jenkins, Powershell, and has a real passion for automation.

@@ -1,0 +1,6 @@
+language: bash
+
+script:
+  - bash rm -r public
+  - hugo
+  - bash upload_s3.sh $AWS_ACCESS_KEY $AWS_SECRET_KEY
