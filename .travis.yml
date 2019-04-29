@@ -1,18 +1,24 @@
-language: bash
+dist: xenial
+language: python
+python:
+  - "3.7"
 jobs:
   include:
     - stage: "install"
-      name: "Install Prerequisites"
+      name: "Install prerequisite packages"
       script: 
-          - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.52/hugo_0.52_Linux-64bit.deb
-          - sudo dpkg -i /tmp/hugo.deb
-    - stage: "build" 
-      name: "Build & Upload"
+          - pip3 install hugo
+          - pip3 install awscli
+    - stage: "cleanup" 
+      name: "Clean up local before running"
       script:
-        - rm -r public
-        - hugo
+        - buildscripts/cleanup.py
+    - stage: "build" 
+      name: "Build the Hugo static website"
+      script:
+        - bash hugo
     - stage: "deploy"
       name: "Publish static website to S3 bucket"
       script:
-        - buildscripts/upload_s3.sh $AWS_ACCESS_KEY $AWS_SECRET_KEY
+        - bash buildscripts/upload_s3.sh $AWS_ACCESS_KEY $AWS_SECRET_KEY
         
