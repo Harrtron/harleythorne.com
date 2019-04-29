@@ -2,7 +2,7 @@ dist: xenial
 language: go
 before_install:
   - chmod +x buildscripts/install_hugo.sh buildscripts/install_awscli.sh buildscripts/upload_s3.sh
-  - bash rm -r -f public
+  - rm -r -f public
   - bash buildscripts/install_hugo.sh
   - bash buildscripts/install_awscli.sh
 jobs:

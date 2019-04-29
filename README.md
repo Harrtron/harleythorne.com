@@ -1,4 +1,4 @@
-Personal (cv-esque) website using Hugo
+Personal CV website using Hugo.
 [![Build Status](https://travis-ci.org/Harrtron/harleythorne.com.svg?branch=master)](https://travis-ci.org/Harrtron/harleythorne.com)
 =======
 ## What is it
