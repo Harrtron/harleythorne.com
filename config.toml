@@ -1,4 +1,4 @@
-baseurl = "http://harleythorne.com/"
+baseurl = "http://harleythorne.com"
 title = "Harley Thorne - Platform Engineer"
 theme = "pulp"
 canonifyurls = true
@@ -29,11 +29,23 @@ hasCJKLanguage = true
     section = ["JSON", "HTML"]
 
 [[menu.main]]
-    name = "Blog"
-    pre = "<i class='fa fa-book-open fa-lg'></i>" #Choose your favorite font from Font Awesome
-    url = "/blog/"
-    weight = 10
+    name = "Professional Experience"
+    pre = "<i class='fas fa-user-tie'></i>" #Choose your favorite font from Font Awesome
+    url = "/cv/"
+    weight = 5
 
+[[menu.main]]
+    name = "Media Experience"
+    pre = "<i class='fas fa-microphone'></i>" #Choose your favorite font from Font Awesome
+    url = "/media-work/"
+    weight = 7
+
+#[[menu.main]]
+#    name = "Blog"
+#    pre = "<i class='fa fa-book-open fa-lg'></i>" #Choose your favorite font from Font Awesome
+#    url = "/posts/"
+#    weight = 10
+#
 [[menu.main]]
     name = "LinkedIn"
     pre = "<i class='fab fa-linkedin fa-lg'></i>"

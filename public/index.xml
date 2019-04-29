@@ -5,9 +5,41 @@
     <link>http://harleythorne.com/</link>
     <description>Recent content on Harley Thorne - Platform Engineer</description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 29 Apr 2019 14:15:19 +0100</lastBuildDate>
     
 	<atom:link href="http://harleythorne.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Media Work</title>
+      <link>http://harleythorne.com/media-work/</link>
+      <pubDate>Mon, 29 Apr 2019 14:15:19 +0100</pubDate>
+      
+      <guid>http://harleythorne.com/media-work/</guid>
+      <description>Harley co-founded a football podcast which he produces, hosts, and promotes.
+GasCast aims to provide Bristol Rovers, and general football supporters a different perspective to keep up-to-date with the club.
+The success of the podcast has led to him featuring on local television, radio and news websites, including:
+ Made in Bristol TV Gloucestershire Gazette Bristol Live (formerly Bristol Post) BBC Radio Bristol  Skills developed from his time working on the podcast include:</description>
+    </item>
+    
+    <item>
+      <title>CV</title>
+      <link>http://harleythorne.com/cv/</link>
+      <pubDate>Mon, 29 Apr 2019 13:33:25 +0100</pubDate>
+      
+      <guid>http://harleythorne.com/cv/</guid>
+      <description>Harley is a Platform Engineer with 7+ years experience in IT, across Support, Infrastructure, SysAdmin and most recently Cloud functions. He has experience working with tooling such as Terraform, Packer, Jenkins, Powershell, and has a real passion for automation. Although most experienced using Windows and AWS Cloud, he loves to learn new technologies, and regularly attends technology events to keep up-to-date with the latest trends.
+Qualifications  AWS Certified Solutions Architect Professional (2019) Level 3 Award in First Line Management (Charted Management Institute)  Experience BJSS Ltd (March 2019 - Present) Platform Engineer Infrastructure, automation, and application delivery in the delivery phase of projects.</description>
+    </item>
+    
+    <item>
+      <title>First blog post</title>
+      <link>http://harleythorne.com/posts/my-first-post/</link>
+      <pubDate>Mon, 29 Apr 2019 11:11:36 +0100</pubDate>
+      
+      <guid>http://harleythorne.com/posts/my-first-post/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

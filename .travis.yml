@@ -1,11 +1,9 @@
 dist: xenial
-language: python
-python:
-  - "3.7"
+language: go
 before_install:
-  - chmod +x buildscripts/cleanup.py buildscripts/upload_s3.sh
-  - python3.7 buildscripts/cleanup.py
-  - pip3 install hugo
+  - chmod +x buildscripts/install_hugo.sh buildscripts/upload_s3.sh
+  - rm -r public
+  - bash buildscripts/install_hugo.sh
   - pip3 install awscli
 jobs:
   include:
