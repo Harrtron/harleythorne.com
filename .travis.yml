@@ -1,6 +1,14 @@
 language: bash
-
-script:
-  - bash rm -r public
-  - hugo
-  - bash upload_s3.sh $AWS_ACCESS_KEY $AWS_SECRET_KEY
+jobs:
+  include:
+    - stage: "install"
+      name: "Install Prerequisites"
+      script: 
+          - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.52/hugo_0.52_Linux-64bit.deb
+          - sudo dpkg -i /tmp/hugo.deb
+    - stage: "build" 
+      name: "Build & Upload"
+      script:
+        - bash rm -r public
+        - hugo
+        - bash buildscripts/upload_s3.sh $AWS_ACCESS_KEY $AWS_SECRET_KEY
