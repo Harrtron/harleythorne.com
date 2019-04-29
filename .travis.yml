@@ -14,7 +14,7 @@ jobs:
     - stage: "cleanup" 
       name: "Clean up local before running"
       script:
-        - buildscripts/cleanup.py
+        - python3.7 buildscripts/cleanup.py
     - stage: "build" 
       name: "Build the Hugo static website"
       script:
