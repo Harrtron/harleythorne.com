@@ -9,6 +9,10 @@ jobs:
     - stage: "build" 
       name: "Build & Upload"
       script:
-        - bash rm -r public
+        - rm -r public
         - hugo
-        - bash buildscripts/upload_s3.sh $AWS_ACCESS_KEY $AWS_SECRET_KEY
+    - stage: "deploy"
+      name: "Publish static website to S3 bucket"
+      script:
+        - buildscripts/upload_s3.sh $AWS_ACCESS_KEY $AWS_SECRET_KEY
+        
