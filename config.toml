@@ -40,12 +40,12 @@ hasCJKLanguage = true
     url = "/media-work/"
     weight = 7
 
-#[[menu.main]]
-#    name = "Blog"
-#    pre = "<i class='fa fa-book-open fa-lg'></i>" #Choose your favorite font from Font Awesome
-#    url = "/posts/"
-#    weight = 10
-#
+[[menu.main]]
+    name = "Blog"
+    pre = "<i class='fa fa-book-open fa-lg'></i>" #Choose your favorite font from Font Awesome
+    url = "/posts/"
+    weight = 10
+
 [[menu.main]]
     name = "LinkedIn"
     pre = "<i class='fab fa-linkedin fa-lg'></i>"
