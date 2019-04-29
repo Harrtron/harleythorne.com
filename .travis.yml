@@ -12,6 +12,6 @@ jobs:
     - stage: "Build and Deploy" 
       name: "Build and deploy the Hugo static website"
       script:
-        - bash hugo
-        - bash buildscripts/upload_s3.sh $AWS_ACCESS_KEY $AWS_SECRET_KEY
+        - hugo
+        - buildscripts/upload_s3.sh $AWS_ACCESS_KEY $AWS_SECRET_KEY
         
