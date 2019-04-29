@@ -4,23 +4,14 @@ python:
   - "3.7"
 before_install:
   - chmod +x buildscripts/cleanup.py buildscripts/upload_s3.sh
+  - python3.7 buildscripts/cleanup.py
+  - pip3 install hugo
+  - pip3 install awscli
 jobs:
   include:
-    - stage: "install"
-      name: "Install prerequisite packages"
-      script: 
-          - pip3 install hugo
-          - pip3 install awscli
-    - stage: "cleanup" 
-      name: "Clean up local before running"
-      script:
-        - python3.7 buildscripts/cleanup.py
-    - stage: "build" 
-      name: "Build the Hugo static website"
+    - stage: "Build and Deploy" 
+      name: "Build and deploy the Hugo static website"
       script:
         - bash hugo
-    - stage: "deploy"
-      name: "Publish static website to S3 bucket"
-      script:
         - bash buildscripts/upload_s3.sh $AWS_ACCESS_KEY $AWS_SECRET_KEY
         
