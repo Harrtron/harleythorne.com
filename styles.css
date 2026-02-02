@@ -168,6 +168,101 @@ a:hover {
     background-color: var(--gray-100);
 }
 
+/* Back Navigation */
+.back-nav {
+    margin-bottom: var(--spacing-lg);
+    text-align: left;
+}
+
+.back-nav a {
+    color: var(--gray-600);
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius);
+    transition: all 0.2s ease;
+}
+
+.back-nav a:hover {
+    color: var(--blue);
+    background-color: var(--gray-100);
+}
+
+/* Project Hero Logo */
+.project-hero-logo {
+    margin-bottom: var(--spacing-lg);
+}
+
+.project-hero-logo-img {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Project Overview Section */
+.project-overview {
+    padding: var(--spacing-2xl) 0;
+}
+
+.project-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.project-content h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-top: var(--spacing-2xl);
+    margin-bottom: var(--spacing-md);
+    color: var(--gray-900);
+}
+
+.project-content h2:first-child {
+    margin-top: 0;
+}
+
+.project-content h3 {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-sm);
+    color: var(--gray-900);
+}
+
+.project-content p {
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    color: var(--gray-700);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.7;
+}
+
+.project-content p:last-child {
+    margin-bottom: 0;
+}
+
+.project-content ul.project-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-md) 0 var(--spacing-lg);
+}
+
+.project-content ul.project-list li {
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    color: var(--gray-700);
+    margin-bottom: var(--spacing-sm);
+    padding-left: var(--spacing-md);
+    position: relative;
+    line-height: 1.7;
+}
+
+.project-content ul.project-list li:before {
+    content: "•";
+    color: var(--blue);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
 /* Sections */
 section {
     padding: var(--spacing-2xl) 0;
