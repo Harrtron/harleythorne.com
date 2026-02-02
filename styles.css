@@ -217,6 +217,12 @@ section:nth-child(even) {
     font-size: 0.95rem;
 }
 
+.experience-period {
+    color: var(--gray-600);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
 .experience-description {
     color: var(--gray-600);
     margin-bottom: 0;
@@ -308,6 +314,11 @@ section:nth-child(even) {
         flex-direction: row;
         justify-content: space-between;
         align-items: baseline;
+        flex-wrap: wrap;
+    }
+    
+    .experience-period {
+        margin-left: auto;
     }
     
     .projects-grid {
