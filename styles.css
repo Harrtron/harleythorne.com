@@ -120,8 +120,30 @@ a:hover {
 .hero-tagline {
     font-size: clamp(1rem, 2.5vw, 1.25rem);
     color: var(--gray-600);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     font-weight: 400;
+}
+
+.hero-nav {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.hero-nav a {
+    color: var(--gray-600);
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius);
+    transition: all 0.2s ease;
+}
+
+.hero-nav a:hover {
+    color: var(--blue);
+    background-color: var(--gray-100);
 }
 
 .hero-social {
@@ -199,6 +221,16 @@ section:nth-child(even) {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.experience-logo {
+    margin-bottom: var(--spacing-md);
+}
+
+.experience-logo-img {
+    max-width: 180px;
+    height: auto;
+    display: block;
+}
+
 .experience-header {
     display: flex;
     flex-direction: column;
@@ -250,6 +282,16 @@ section:nth-child(even) {
     border-color: var(--blue);
     box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
     transform: translateY(-2px);
+}
+
+.project-header {
+    margin-bottom: var(--spacing-md);
+}
+
+.project-logo {
+    max-width: 200px;
+    height: auto;
+    display: block;
 }
 
 .project-name {
