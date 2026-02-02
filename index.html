@@ -10,94 +10,109 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <div class="hero-image">
-                <img src="assets/HarleySportsConference.jpeg" alt="Harley Thorne" id="photo">
-            </div>
-            <h1 class="hero-name">Harley Thorne</h1>
-            <p class="hero-tagline">Founder. Product. Growth. Getting things live.</p>
-            <nav class="hero-nav">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-            </nav>
-            <nav class="hero-social">
-                <a href="https://linkedin.com/in/harleythorne" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                </a>
-                <a href="https://x.com/harrtron" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-                    </svg>
-                </a>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="about" id="about">
-            <div class="container">
-                <h2 class="section-title">About</h2>
-                <div class="about-content">
-                    <p>I build things from zero.</p>
-                    <p>I'm at my best in messy, early-stage environments where the problem isn't fully defined, the resources are limited, and progress matters more than perfection. I move quickly, ship early, learn from real users, and keep momentum high.</p>
-                    <p>I co-founded FanHub, a sports loyalty platform for football fans. We took it from idea to 50k+ monthly active users, over 200k registered fans, and $3m+ in venture funding. Along the way I owned whatever mattered most at the time — product, growth, commercial strategy, operations — and helped turn an idea into something people actually used, loved, and paid for.</p>
-                    <p>What that taught me is simple: building something new isn't about titles or frameworks. It's about judgement, pace, and follow-through. Making decisions with incomplete information. Creating clarity where there isn't any. Setting standards, building systems, and helping teams ship under pressure.</p>
-                    <p>I'm drawn to early-stage products, fast-moving teams, and work where you're creating something that didn't exist yesterday.</p>
+    <div class="bento-container">
+        <!-- Identity Card -->
+        <article class="bento-card identity-card">
+            <div class="identity-content">
+                <img src="assets/HarleySportsConference.jpeg" alt="Harley Thorne" class="identity-photo">
+                <div class="identity-text">
+                    <h1 class="identity-name">Harley Thorne</h1>
+                    <p class="identity-tagline">Founder. Product. Growth. Getting things live.</p>
+                    <nav class="identity-social">
+                        <a href="mailto:harleyjthorne@gmail.com" aria-label="Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/harleythorne" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/harrtron" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                    </nav>
                 </div>
             </div>
-        </section>
+        </article>
 
-        <section class="experience" id="experience">
-            <div class="container">
-                <h2 class="section-title">Experience</h2>
-                <div class="experience-list">
-                    <article class="experience-item">
-                        <div class="experience-logo">
-                            <img src="assets/FH Master Logo.png" alt="FanHub Logo" class="experience-logo-img">
-                        </div>
-                        <div class="experience-header">
-                            <h3 class="experience-role">Co-Founder</h3>
-                            <span class="experience-company">FanHub</span>
-                            <span class="experience-period">2020 – 2026</span>
-                        </div>
-                        <p class="experience-description">Built and scaled a sports loyalty platform from concept to 50k+ monthly active users and $3m+ in venture funding. Led product, growth, and commercial strategy end-to-end, shipping core product loops, building revenue models, and creating systems that kept teams aligned and moving quickly in a high-pressure startup environment.</p>
-                    </article>
+        <!-- About Card -->
+        <article class="bento-card about-card">
+            <h2 class="card-title">About</h2>
+            <div class="about-content">
+                <p>I build things from zero.</p>
+                <p>I'm at my best in messy, early-stage environments where the problem isn't fully defined, the resources are limited, and progress matters more than perfection. I move quickly, ship early, learn from real users, and keep momentum high.</p>
+                <p>I co-founded FanHub, taking it from idea to 50k+ monthly active users, over 200k registered fans, and $3m+ in venture funding. I owned whatever mattered most at the time — product, growth, commercial strategy, operations — and helped turn an idea into something people actually used, loved, and paid for.</p>
+                <p>I'm drawn to early-stage products, fast-moving teams, and work where you're creating something that didn't exist yesterday.</p>
+            </div>
+        </article>
+
+        <!-- Experience Card -->
+        <article class="bento-card experience-card">
+            <h2 class="card-title">Experience</h2>
+            <div class="experience-content">
+                <div class="experience-logo">
+                    <img src="assets/FH Master Logo.png" alt="FanHub Logo" class="experience-logo-img">
+                </div>
+                <div class="experience-header">
+                    <h3 class="experience-role">Co-Founder</h3>
+                    <span class="experience-company">FanHub</span>
+                    <span class="experience-period">2020 – 2026</span>
+                </div>
+                <div class="experience-metrics">
+                    <span class="metric">50k+ MAU</span>
+                    <span class="metric">200k+ users</span>
+                    <span class="metric">$3m+ funding</span>
+                </div>
+                <p class="experience-description">Built and scaled a sports loyalty platform from concept to live product. Led product, growth, and commercial strategy end-to-end, shipping core product loops, building revenue models, and creating systems that kept teams aligned and moving quickly.</p>
+            </div>
+        </article>
+
+        <!-- Education Card -->
+        <article class="bento-card education-card">
+            <h2 class="card-title">Education</h2>
+            <div class="education-content">
+                <h3 class="education-degree">MBA (Distinction)</h3>
+                <p class="education-school">University of the West of England</p>
+                <p class="education-note">CMI Level 7 Award – Strategic Management & Leadership</p>
+            </div>
+        </article>
+
+        <!-- Projects Card -->
+        <article class="bento-card projects-card">
+            <h2 class="card-title">Projects</h2>
+            <div class="projects-list">
+                <div class="project-item">
+                    <img src="assets/FH Master Logo.png" alt="FanHub Logo" class="project-item-logo">
+                    <div class="project-item-content">
+                        <h3 class="project-item-name">FanHub</h3>
+                        <p class="project-item-description">A loyalty platform for football fans. Built from zero to 200k registered users, 50k+ MAU, and venture backing.</p>
+                        <a href="fanhub.html" class="project-item-link">Learn more →</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="assets/nudge_logo.png" alt="Nudge Logo" class="project-item-logo">
+                    <div class="project-item-content">
+                        <h3 class="project-item-name">Nudge</h3>
+                        <p class="project-item-description">A gentle app for couples who want to feel more connected while getting everyday life done.</p>
+                        <a href="nudge.html" class="project-item-link">Learn more →</a>
+                    </div>
                 </div>
             </div>
-        </section>
-
-        <section class="projects" id="projects">
-            <div class="container">
-                <h2 class="section-title">Projects</h2>
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <div class="project-header">
-                            <img src="assets/FH Master Logo.png" alt="FanHub Logo" class="project-logo">
-                        </div>
-                        <p class="project-description">A loyalty platform for football fans. Built from zero to 200k registered users, 50k+ MAU, and venture backing.</p>
-                        <a href="fanhub.html" class="project-link" aria-label="Learn more about FanHub">Learn more →</a>
-                    </article>
-                    <article class="project-card">
-                        <div class="project-header">
-                            <img src="assets/nudge_logo.png" alt="Nudge Logo" class="project-logo">
-                        </div>
-                        <p class="project-description">A gentle app for couples who want to feel more connected while getting everyday life done. Turns small actions into moments of connection, without nagging or pressure.</p>
-                        <a href="nudge.html" class="project-link" aria-label="Learn more about Nudge">Learn more →</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-    </main>
+        </article>
+    </div>
 
     <footer class="footer">
         <div class="container">
+            <p class="footer-cta">Want to discuss how we can work together? <a href="mailto:harleyjthorne@gmail.com">harleyjthorne@gmail.com</a></p>
             <nav class="footer-social">
+                <a href="mailto:harleyjthorne@gmail.com" aria-label="Email">Email</a>
                 <a href="https://linkedin.com/in/harleythorne" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
                 <a href="https://x.com/harrtron" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a>
             </nav>
