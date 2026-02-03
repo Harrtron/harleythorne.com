@@ -52,4 +52,49 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }, 100);
+
+    // Modal functionality for project screenshots
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+    modal.innerHTML = `
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    `;
+    document.body.appendChild(modal);
+
+    const modalImg = document.getElementById('modalImage');
+    const modalClose = document.querySelector('.modal-close');
+
+    // Add click handlers to all project screenshots
+    const screenshots = document.querySelectorAll('.project-screenshot');
+    screenshots.forEach(img => {
+        img.addEventListener('click', function() {
+            modal.style.display = 'block';
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        });
+    });
+
+    // Close modal when clicking the X
+    modalClose.addEventListener('click', function() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Restore scrolling
+    });
+
+    // Close modal when clicking outside the image
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+    });
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.style.display === 'block') {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+    });
 });

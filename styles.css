@@ -155,6 +155,19 @@ a:hover {
     font-weight: 400;
 }
 
+.identity-content .project-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    justify-content: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.identity-content .metric {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+}
+
 .identity-social {
     display: flex;
     gap: var(--spacing-sm);
@@ -323,8 +336,22 @@ a:hover {
 
 .project-item-name {
     color: var(--gray-900);
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: 0;
     font-size: 1rem;
+}
+
+.project-item .project-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
+}
+
+.project-item .metric {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    white-space: nowrap;
 }
 
 .project-item-description {
@@ -587,6 +614,91 @@ a:hover {
     left: 0;
 }
 
+/* Project Images */
+.project-images-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-md);
+}
+
+.project-screenshot {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.project-screenshot:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Modal/Lightbox */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    display: block;
+    max-width: 90vw;
+    max-height: 90vh;
+    animation: modalFadeIn 0.3s ease-out;
+}
+
+.modal-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    color: var(--blue);
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.project-feature-image {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.image-caption {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
 /* Responsive Breakpoints */
 @media (min-width: 768px) {
     body {
@@ -646,8 +758,42 @@ a:hover {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .project-identity-card,
-    .project-summary-card {
+    .project-identity-card {
+        grid-column: span 2;
+    }
+
+    .project-summary-card,
+    .project-features-card {
+        grid-column: span 1;
+    }
+
+    .nudge-page .project-summary-card,
+    .nudge-page .project-features-card {
+        grid-column: 2 / -1;
+    }
+
+    .nudge-page .project-identity-card {
+        grid-column: 1 / 2;
+        grid-row: 1 / span 2;
+    }
+
+    .nudge-page {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .project-images-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-features-card .project-images-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .nudge-page .project-features-card .project-images-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .nudge-page .key-features-card {
         grid-column: span 2;
     }
 }
@@ -690,6 +836,29 @@ a:hover {
     }
 
     .project-summary-card {
+        grid-column: span 1;
+    }
+
+    .project-features-card {
+        grid-column: span 1;
+    }
+
+    .nudge-page .project-identity-card,
+    .nudge-page .project-summary-card,
+    .nudge-page .project-features-card {
+        grid-column: 2 / -1;
+    }
+
+    .nudge-page {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .nudge-page .project-identity-card {
+        grid-column: 1 / 2;
+        grid-row: 1 / span 2;
+    }
+
+    .nudge-page .key-features-card {
         grid-column: span 2;
     }
 }
